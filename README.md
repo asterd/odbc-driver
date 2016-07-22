@@ -1,16 +1,16 @@
 l5-odbc-driver
 ==============
 
-Laravel 5.1 ODBC driver
+Laravel 5.2 ODBC driver
 
 Installation
 ============
 
-To Install this in your Laravel 5.1 app, open composer.json and add:
+To Install this in your Laravel 5.2 app, open composer.json and add:
 
 ```json
 "require": {
-  "garylocke/odbc-driver": "dev-master"
+  "phareous/odbc-driver": "dev-master"
 }
 ```
 
@@ -34,8 +34,8 @@ Finally, be sure to add the odbc driver with connection information to the `conn
     'connections' => [
         'odbc' => [
             'driver' => 'odbc',
-            'dsn' => 'Driver={iSeries Access ODBC Driver};System=my_system_name;',
-            'grammar' => 'DB2',
+            'dsn' => 'odbc:Driver={iSeries Access ODBC Driver};System=my_system_name;',
+            'grammar' => '',
             'username' => 'foo',
             'password' => 'bar',
             'database' => '',
@@ -55,7 +55,7 @@ If you would like to use a Laravel provided file, just add that instead. For exa
 ```php
 'odbc' => [
     'driver' => 'odbc',
-    'dsn' => 'some driver',
+    'dsn' => 'odbc:some driver',
     'grammar' => 'SqlServerGrammar',
     'username' => 'foo',
     'password' => 'bar',
