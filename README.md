@@ -1,22 +1,14 @@
-l5-odbc-driver
+odbc-driver
 ==============
 
-Laravel 5.2 ODBC driver
+Laravel 6.2 ODBC driver
 
 Installation
 ============
 
-To Install this in your Laravel 5.2 app, open composer.json and add:
+To Install this in your Laravel 6.2 app, run:
 
-```json
-"require": {
-  "phareous/odbc-driver": "dev-master"
-}
-```
-
-And then run:
-
-`composer update`
+`composer require phareous/odbc-driver:^6.2.0`
 
 This will download the required package from Packagist.org.
 
