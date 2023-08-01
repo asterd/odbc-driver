@@ -1,6 +1,6 @@
 {
     "name": "phareous/odbc-driver",
-    "description": "Laravel 6.2 ODBC Driver",
+    "description": "Laravel 10 ODBC Driver",
     "keywords": ["odbc", "driver", "laravel", "6.2"],
     "authors": [
         {
@@ -17,9 +17,9 @@
         }
     ],
     "require": {
-        "php": ">=7.2",
+        "php": ">=8.0",
         "ext-pdo_odbc": "*",
-	"laravel/framework": ">=6.2.0"
+        "laravel/framework": ">=10.3.0"
     },
     "autoload": {
         "classmap": [

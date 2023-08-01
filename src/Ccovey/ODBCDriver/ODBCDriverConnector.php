@@ -8,6 +8,9 @@ use Illuminate\Support\Arr;
 
 class ODBCDriverConnector extends Connector implements ConnectorInterface
 {
+    /**
+     * @throws \Exception
+     */
     public function connect(array $config)
     {
         $dsn = Arr::get($config, 'dsn');

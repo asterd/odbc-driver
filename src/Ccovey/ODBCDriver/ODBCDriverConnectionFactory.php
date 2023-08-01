@@ -11,6 +11,7 @@ use Illuminate\Database\MySqlConnection;
 use Illuminate\Database\PostgresConnection;
 use Illuminate\Database\SQLiteConnection;
 use Illuminate\Database\SqlServerConnection;
+use InvalidArgumentException;
 
 class ODBCDriverConnectionFactory extends ConnectionFactory
 {
